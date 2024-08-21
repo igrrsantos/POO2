@@ -1,0 +1,29 @@
+package atividade3;
+import java.util.Scanner;
+import java.time.format.DateTimeFormatter;
+import java.time.LocalDate;
+
+public class Programa {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		
+        System.out.print("Nome do curso: ");
+        String nome = scanner.nextLine();
+
+        System.out.print("Código do curso: ");
+        int codigo = scanner.nextInt();
+        scanner.nextLine();
+        
+        System.out.print("Data de início do curso no formato (dd/MM/yyyy): ");
+        String dataNascInput = scanner.nextLine();
+        LocalDate dataInicio = LocalDate.parse(dataNascInput, formatter);
+
+        Curso curso = new Curso(codigo, nome, dataInicio);
+        curso.toString();
+        System.out.println("Curso cadastrado com sucesso!");
+
+	}
+
+}

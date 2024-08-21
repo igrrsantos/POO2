@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+/home/igor/studyspace/POO/.metadata/.plugins/org.eclipse.jdt.core
+3399477322.index
+1865797976.index
+811237580.index

@@ -1,0 +1,21 @@
+package atividade3;
+import java.util.Scanner;
+
+public class Programa {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+        System.out.print("Nome do Curso: ");
+        String nome = scanner.nextLine();
+
+        System.out.print("Código do Curso: ");
+        String codigo = scanner.nextLine();
+
+        Curso curso = new Curso(nome, codigo);
+        cursos.add(curso);
+        System.out.println("Curso cadastrado com sucesso!");
+
+	}
+
+}
